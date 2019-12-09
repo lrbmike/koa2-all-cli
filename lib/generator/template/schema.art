@@ -1,0 +1,21 @@
+const Sequelize = require('sequelize');
+
+module.exports = function(sequelize, DataTypes) {
+    let {{ className }} = sequelize.define("{{ className }}",
+        {
+            {{ each columns columnItem index}}
+            {{ columnItem.columnName }}: {{ columnItem.columnType }},
+            {{ /each }}
+        },
+        {
+            tableName: '{{ tableName }}',
+            timestamps: false,
+            freezeTableName: true,
+            getterMethods: {
+
+            }
+        }
+    );
+
+    return {{ className }};
+};

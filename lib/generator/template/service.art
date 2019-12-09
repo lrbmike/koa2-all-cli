@@ -1,0 +1,13 @@
+const {{ className }}Model = require('../../models/{{ className }}Model')
+
+class {{ className }}Service {
+
+    constructor (opts) {
+        this.opts = opts || {}
+    }
+
+}
+
+let service = new {{ className }}Service();
+
+module.exports = service

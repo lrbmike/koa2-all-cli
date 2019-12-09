@@ -1,0 +1,17 @@
+const BaseModel = require('./BaseModel')
+
+const opts = {}
+opts.model = '{{ className }}'
+opts.attrs = [{{@ columnStr }}]
+
+
+class {{ className }}Model extends BaseModel{
+
+    constructor (opts) {
+        super(opts)
+    }
+}
+
+let model = new {{ className }}Model(opts);
+
+module.exports = model

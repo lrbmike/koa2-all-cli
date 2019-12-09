@@ -1,0 +1,27 @@
+{
+  "name": "koa2-all-cli",
+  "version": "0.0.1",
+  "description": "ko2 framework auto build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "koa2cli": "bin/koa2cli.js"
+    },
+  "keywords": [
+    "koa2",
+    "frame"
+  ],
+  "dependencies": {
+    "commander": "~2.15.1",
+    "promise": "~8.0.2",
+    "koa-orm": "~2.3.2",
+    "mysql2": "^1.6.5",
+    "lodash": "~4.17.11",
+    "string": "~3.3.3",
+    "art-template": "~4.13.2"
+  },
+  "author": "lrbmike",
+  "license": "ISC"
+}
