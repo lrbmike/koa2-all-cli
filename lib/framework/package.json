@@ -1,0 +1,25 @@
+{
+  "name": "koa2-framework",
+  "version": "0.0.1",
+  "dependencies": {
+    "koa": "~2.7.0",
+    "koa-router": "~7.4.0",
+    "koa-bodyparser": "~4.2.1",
+    "koa2-formidable": "~1.0.2",
+    "koa-static": "~5.0.0",
+    "koa-ejs": "~4.2.0",
+    "ioredis": "~4.6.2",
+    "log4js": "~4.0.2",
+    "promise": "~8.0.2",
+    "request": "~2.88.0",
+    "koa-orm": "~2.3.2",
+    "mysql2": "^1.6.5",
+    "koa-session2": "~2.2.8",
+    "lodash": "~4.17.11",
+    "string": "~3.3.3",
+    "moment": "~2.24.0",
+    "iconv-lite": "~0.4.24",
+    "crypto-js": "~3.1.9-1",
+    "xregexp": "~4.2.4"
+  }
+}

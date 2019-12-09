@@ -11,6 +11,7 @@ program
 
 program.option('-t, --tables [tables]', 'generate tables, multiple use "##"')
     .option('--prefix [prefix]', 'table prefix')
+    .option('-f, --framework [name]', 'generate framework, input your project name')
     .parse(process.argv);
 
 if (program.tables) {
@@ -20,6 +21,17 @@ if (program.tables) {
 }
 
 async function generatorGo(tables, prefix) {
-	let opts = {'table_names': tables, 'table_prefix':prefix}
+	let opts = {'table_names': tables, 'table_prefix':prefix, 'model': 'table'}
+    await generator(opts)
+}
+
+if (program.framework) {
+    console.log('your project name is:');
+    console.log(program.framework);
+    frameworkGo(program.framework, program.prefix)
+}
+
+async function frameworkGo(projectName, prefix) {
+    let opts = {'project_name': projectName, 'table_prefix':prefix, 'model': 'framework'}
     await generator(opts)
 }
