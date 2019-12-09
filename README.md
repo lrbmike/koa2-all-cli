@@ -1,5 +1,5 @@
 # koa2-all-cli
-code scaffold for `koa@2` , contains orm framework that can auto-generated models、schema and service
+code scaffold for `koa@2` , contains orm framework that can auto-generated models、schema and service<br>
 ##Usage
 1.clone this repository<br>
 ``` 
