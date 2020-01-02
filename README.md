@@ -14,8 +14,12 @@ vim ./config/db.json
 3. run<br>
  ``` 
 node ./bin/koa2cli.js -t your_table_name
+or
+node ./bin/koa2cli.js -f your_project_name
 
 Options:
 -t, --tables [tables]  generate tables, multiple use "##"
+-f, --framework [name]  generate koa2 framework, input your project name
 --prefix [prefix]      table prefix
  ``` 
+the code will create in the `output` directory
