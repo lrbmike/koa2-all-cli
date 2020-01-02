@@ -20,6 +20,7 @@ node ./bin/koa2cli.js -f your_project_name
 Options:
 -t, --tables [tables]  generate tables, multiple use "##"
 -f, --framework [name]  generate koa2 framework, input your project name
+-i, --include [tables] generate framework and include input tables, multiple use "##"
 --prefix [prefix]      table prefix
  ``` 
 the code will create in the `output` directory
