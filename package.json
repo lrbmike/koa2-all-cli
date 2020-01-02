@@ -1,7 +1,7 @@
 {
   "name": "koa2-all-cli",
   "version": "0.0.1",
-  "description": "ko2 framework auto build",
+  "description": "ko2 framework orm auto-generated",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,11 @@
     },
   "keywords": [
     "koa2",
-    "frame"
+    "framework",
+    "orm"
+  ],
+  "files": [
+    "lib"
   ],
   "dependencies": {
     "commander": "~2.15.1",
