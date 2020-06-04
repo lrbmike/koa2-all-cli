@@ -11,15 +11,15 @@
     "ioredis": "~4.16.0",
     "log4js": "~6.1.2",
     "promise": "~8.1.0",
-    "request": "~2.88.0",
+    "superagent": "~5.2.2",
+    "superagent-charset": "~1.2.0",
     "koa-orm": "~3.0.2",
     "mysql2": "^2.1.0",
     "koa-session2": "~2.2.10",
     "lodash": "~4.17.15",
     "string": "~3.3.3",
     "moment": "~2.24.0",
-    "iconv-lite": "~0.4.24",
-    "crypto-js": "~4.0.0",
-    "xregexp": "~4.3.0"
+    "iconv": "~3.0.0",
+    "crypto-js": "~4.0.0"
   }
 }
