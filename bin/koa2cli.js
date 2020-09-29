@@ -12,7 +12,7 @@ program
 program.option('-t, --tables [tables]', 'generate tables, multiple use "##"')
     .option('--prefix [prefix]', 'table prefix')
     .option('-f, --framework [name]', 'generate framework, input your project name')
-    .option('-i, --include [tables]', 'generate framework and include input tables, multiple use "##"')
+    .option('-i, --include [tables]', 'generate framework and include input tables, multiple use "##", and you can use "all" to create all tables')
     .parse(process.argv);
 
 if (program.tables) {
