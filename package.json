@@ -1,8 +1,12 @@
 {
   "name": "koa2-all-cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ko2 framework orm auto-generated",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lrbmike/koa2-all-cli.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,5 +31,5 @@
     "art-template": "~4.13.2"
   },
   "author": "lrbmike",
-  "license": "ISC"
+  "license": "MIT"
 }
