@@ -1,0 +1,39 @@
+{
+  "session": {
+    "key": "koa2-strong"
+  },
+  "static": {
+    "root": "/public"
+  },
+  "render": {
+    "root": "/public/views",
+    "layout": false,
+    "viewExt": "html",
+    "cache": false,
+    "debug": false
+  },
+  "form": {
+    "uploadDir": "uploads/"
+  },
+  "bodyparser": {
+    "formLimit": "2mb"
+  },
+  "router": {
+    "routesFilePath": "/config/routes.js",
+    "controllerFilePath": "/app/controllers/{controller}.js",
+    "controllerPattern": "{controller}"
+  },
+  "db": {
+    "settingPath": "/config/db.json",
+    "modelPath": "/app/schema"
+  },
+  "logger": {
+    "appenders": {
+      "out": { "type": "stdout"},
+      "app": { "type": "dateFile", "filename": "logs/app.log", "pattern": ".yyyy-MM-dd", "compress": true}
+    },
+    "categories": {
+      "default": { "appenders": [ "out", "app" ], "level": "debug" }
+    }
+  }
+}

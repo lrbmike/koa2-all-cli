@@ -2,7 +2,7 @@
   "name": "koa2-framework",
   "version": "0.0.1",
   "dependencies": {
-    "koa2-strong": "^0.0.4",
+    "koa2-strong": "^0.0.5",
     "ioredis": "^4.17.3",
     "superagent": "^6.1.0",
     "superagent-charset": "^1.2.0",
