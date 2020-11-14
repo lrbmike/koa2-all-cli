@@ -1,0 +1,14 @@
+{
+  "name": "koa2-framework-api",
+  "version": "0.0.1",
+  "dependencies": {
+    "koa2-strong-api": "^0.0.5",
+    "ioredis": "^4.17.3",
+    "superagent": "^6.1.0",
+    "superagent-charset": "^1.2.0",
+    "lodash": "^4.17.20",
+    "string": "^3.3.3",
+    "moment": "^2.29.0",
+    "crypto-js": "^4.0.0"
+  }
+}

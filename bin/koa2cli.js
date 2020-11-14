@@ -13,6 +13,7 @@ program.option('-t, --tables [tables]', 'generate tables, multiple use "##"')
     .option('--prefix [prefix]', 'table prefix')
     .option('-f, --framework [name]', 'generate framework, input your project name')
     .option('-i, --include [tables]', 'generate framework and include input tables, multiple use "##", and you can use "all" to create all tables')
+    .option('-a, --api [name]', 'generate framework api')
     .parse(process.argv);
 
 if (program.tables) {
@@ -27,12 +28,23 @@ async function generatorGo(tables, prefix) {
 }
 
 if (program.framework) {
-    console.log('your project name is:');
+    console.log('your web project name is:');
     console.log(program.framework);
     frameworkGo(program.framework, program.prefix, program.include)
 }
 
 async function frameworkGo(projectName, prefix, include) {
     let opts = {'project_name': projectName, 'table_prefix':prefix, 'model': 'framework', 'include': include || ''}
+    await generator(opts)
+}
+
+if (program.api) {
+    console.log('your api project name is:');
+    console.log(program.api);
+    apiGo(program.api, program.prefix, program.include)
+}
+
+async function apiGo(projectName, prefix, include) {
+    let opts = {'project_name': projectName, 'table_prefix':prefix, 'model': 'api', 'include': include || ''}
     await generator(opts)
 }
