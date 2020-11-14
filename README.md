@@ -15,11 +15,14 @@ vim ./config/db.json
  ``` 
 node ./bin/koa2cli.js -t your_table_name
 or
-node ./bin/koa2cli.js -f your_project_name
+node ./bin/koa2cli.js -f your_web-project_name
+or
+node ./bin/koa2cli.js -a your_api-project_name
 
 Options:
 -t, --tables [tables]  generate tables, multiple use "##"
--f, --framework [name]  generate koa2 framework, input your project name
+-f, --framework [name]  generate koa2 web framework, input your project name
+-a, --api [name]  generate koa2 api framework, input your project name
 -i, --include [tables] generate framework and include input tables, multiple use "##"
 --prefix [prefix]      table prefix
  ``` 
