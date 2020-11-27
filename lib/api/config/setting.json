@@ -5,6 +5,10 @@
     "token_expires_time": 604800000,
     "unless_path": "^\/login"
   },
+  "cors": {
+    "open": true,
+    "cors_config": {}
+  },
   "form": {
     "uploadDir": "uploads/"
   },
