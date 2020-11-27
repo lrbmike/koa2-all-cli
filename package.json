@@ -12,7 +12,7 @@
   },
   "bin": {
     "koa2cli": "bin/koa2cli.js"
-    },
+  },
   "keywords": [
     "koa2",
     "framework",
